@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Dashboard.master.cs" Inherits="Dashboard" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="codebase/dhtmlx.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <h1>Welcome to Report System</h1>
+    <form id="form2" runat="server">
+   
+        <table align="center" width="100%" >
+        
+            <tr>
+            <td align="right" colspan="2" bgcolor="#FF9900">  
+                <table><tr><td width="700" align="Left" 
+                        style="font-family: 'Book Antiqua'; font-size: large; font-weight: bolder; color: #660066">
+                    Reports</td></tr></table> 
+            </td>
+            </tr>
+            <div class="LftMnuTitleOver">
+            <tr><td class="style2">
+                <asp:Menu ID="Menu2" runat="server" Font-Bold="True" Orientation="Vertical" 
+                    Width="174px" Height="297px" BackColor="#CC9900" align="Left" CssClass="LftSideSubMnuOver">
+                       
+                        <DynamicMenuItemStyle BackColor="#999966" />
+                       
+                        <Items>
+                         
+                            <asp:MenuItem Text="Listing Reports" Value="Listing Reports">
+                             <asp:MenuItem NavigateUrl="ListOfCustomers.aspx" Text="Customer List"
+                                    Value="Account Status"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="spsuplierlistdetails.aspx" Text="Suppliers" Value="Suppliers">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Default.aspx" Text="List Of Products" Value="products"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="CS.aspx" Text="Customers Orders" Value="Country"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="CSs.aspx" Text="Customer And Employees" Value="State"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="FrmOrderList.aspx" Text="Oders Made" Value="oder"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="Defaults.aspx" Text="customers order" Value="customers"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Employee Detail"
+                                    Value="Employee Detail"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Service Type" Value="Service Type">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Transaction Type"
+                                    Value="Transaction Type"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Designation" Value="Designation">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                         
+                            <asp:MenuItem Text="Manage" Value="Manage">
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Account Status"
+                                    Value="Account Status"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Account Type"
+                                    Value="Account Type"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Bank" Value="Bank">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Branch" Value="Branch">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="City" Value="City">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="State" Value="State">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Country" Value="Country">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Designation"
+                                    Value="Designation"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Employee"
+                                    Value="Employee"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Service Type"
+                                    Value="Service Type"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Transaction Type"
+                                    Value="Transaction Type"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Customer"
+                                    Value="Customer"></asp:MenuItem>
+                            </asp:MenuItem>
+                            
+                            <asp:MenuItem Text="Cheque Book Status" Value="Cheque Book Status" NavigateUrl="#.aspx"></asp:MenuItem>
+                            
+                            <asp:MenuItem NavigateUrl="#.aspx" Text="Fund Deposit Status"
+                                Value="Fund Deposit Status"></asp:MenuItem>
+                            
+                            <asp:MenuItem NavigateUrl="#.aspx" Text="Fund WithDrawl Status"
+                                Value="Fund WithDrawl Status"></asp:MenuItem>
+                            
+                            <asp:MenuItem Text="Customer Account" Value="Customer Account" NavigateUrl="#.aspx">
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Account Holder Info"
+                                    Value="Account Holder Info"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Account Related Info"
+                                    Value="Account Related Info"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="#.aspx" Text="Account Login Info" Value="Account Login Info">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            
+                        </Items>
+                       
+                   
+                    </asp:Menu></td>
+                </div>
+                <td>
+                <div class="rightColumn">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </td>
+    </tr>
+   </table>
+          
+    </form>
+</body>
+
+</html>
